@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/componentContainerLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/topValueTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:text="11"
+        android:textAlignment="center"
+        android:visibility="gone"
+        tools:layout_editor_absoluteX="198dp"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/topBraceIv"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:rotation="180"
+        android:scaleType="fitXY"
+        android:scaleY="1.0"
+        android:visibility="gone"
+        app:srcCompat="@drawable/ic_curly_brace"
+        tools:layout_editor_absoluteX="181dp"
+        tools:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/foregroundLl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:text="TextView"
+        android:textColor="?android:attr/textColor"
+        android:textSize="48sp"
+        app:autoSizeMaxTextSize="50sp"
+        app:autoSizeMinTextSize="8sp"
+        app:autoSizeTextType="uniform">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/contentTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TextView"
+                android:textColor="?android:attr/textColor"
+                android:textSize="24sp" />
+
+            <View
+                android:id="@+id/errorBarV"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/errorHighlight"
+                android:backgroundTint="@color/errorHighlight"
+                android:visibility="invisible"
+                tools:visibility="visible" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/bottomBraceIv"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:scaleType="fitXY"
+        android:scaleY="1.0"
+        android:visibility="gone"
+        app:srcCompat="@drawable/ic_curly_brace"
+        tools:layout_editor_absoluteX="181dp"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/bottomValueTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:text="11"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:visibility="gone"
+        tools:layout_editor_absoluteX="198dp"
+        tools:visibility="visible" />
+
+</LinearLayout>

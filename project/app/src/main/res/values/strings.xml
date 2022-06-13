@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">CalculatorApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="square"><i>x</i><sup>2</sup></string>
+    <string name="power"><i>x<sup>y</sup></i></string>
+    <string name="memoryEmpty">There is nothing stored in memory.</string>
+
+    <string name="userGuide">Welcome! Thanks for using my app. Here\'s a quick guide to the features of this app:\n\n
+            1. The menu button in the top left allows you to access 4 things: This user guide, the History screen, a settings screen, and feedback submission.\n\n
+            2. All of the expressions you evaluate are saved in History. Check out the History screen and click on an expression to edit it or evaluate it again.\n\n
+            3. Find the buzzing a bit overkill? Turn it off in the settings screen. You can also adjust the default number of digits shown among other things.\n\n
+            4. Want to see more precision? Double tap the value shown and you\'ll see 100 digits of precision. If nothing happens it\'s because there\'s nothing more to show! You can turn this off in settings.\n\n
+            5. Errors are highlighted as they occur, but you can keep adding input. This allows you to use the arrow keys (top right) to go back and change any mistakes you made. No more typing in a bunch of input only to realize the calculator stopped listening halfway through!\n\n
+            6. The value of subexpressions are shown above the subexpression, as values become available. To prevent your screen from getting crowded, only one value is shown at a time.\n\n
+            7. If you try to do an operation that doesn\'t compute (like taking the square root of a negative number), the operation will be highlighted as an error.\n\n
+            8. If you try to evaluate an expression that has open subexpressions (\"(\" without a matching \")\") it will be highlighted as an error. Just keep adding \")\" until all the highlighted errors disappear and try again!\n\nFound a bug? Use the "Submit Feedback" menu item to let me know!
+    </string>
+</resources>
